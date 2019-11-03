@@ -42,3 +42,16 @@
   height: 89%;
   box-shadow: 10px 10px 20px black;
 }
+
+#thisIs {
+  position: fixed;
+  margin-left: 40%;
+  z-index: 0;
+}
+
+#back4 p {
+  position: fixed;
+  margin-left: 40%;
+  margin-top: 30%;
+  z-index: 0;
+}
