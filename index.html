@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<head>
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
-
-<!--
-Hi Rachel! I included a note on the CSS sheet I made before
-realizing view source will not let you see that. The comment just
-gave credit to this website
-https://css-tricks.com/perfect-full-page-background-image/
-which I used fairly extensively to guide my style sheet to centering
-my background image.
--->
-
-<h1 id=thisIs>This is a header</h1>
-
-<div id=back3>
-  <img src="assets/back3.jpg" alt="background"></img>
-</div>
-<div id=back4>
-  <img src="assets/back4.jpg" alt="back4"></img>
-  <p>I ended up changing the website a little bit to something I may want to use later. I spent a decent amount of time centering the background and squares that sit on top of it. I haven't really editted the text as it doesn't always display exactly where I want it to. Other than that I added a header and this paragraph and made sure it sits on top of the backgrounds. I also included a citation as a comment in the HTML.</p>
-</div id=back4>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Knock</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/htmlKnock.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Knock</div>
+      </div>
+    </div>
+  </body>
+</html>
