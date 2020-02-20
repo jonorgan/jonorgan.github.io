@@ -17,4 +17,4 @@
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
 
-.littleNote {position: absolute; bottom: 0%; left: 40%;}
+.littleNote {position: absolute; bottom: -5%; left: 40%;}
